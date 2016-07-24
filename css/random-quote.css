@@ -1,11 +1,66 @@
 body {
   background-color: #ff3030;
   font-family: monospace;
+  color:white;
 }
+blockquote {
+  border-left-color:white;
+}
+
+#info-button {
+  position:fixed;
+  font-size:14px;
+  left:10px;
+  top: 10px;
+  border-radius:100%;
+  color:#d9534f;
+  background:white;
+  width:35px;
+  height:35px;
+  text-align:center;
+  padding-top:8px;
+  cursor:pointer;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  transition:1s;
+  z-index:1;
+}
+#info-button:hover {
+/*  transform: rotate(360deg);*/
+  transition:1s;
+  background:#fee;
+}
+
+#project-description {
+  position: fixed;
+  font-size:14px;
+  display: block;
+  width: 60%;
+  min-height: 300px;
+  margin: 0 auto;
+  color: #ff3030;
+  background:white;
+  top: -365px;
+  left: 50%;
+  text-align: center;
+  transition: 2s;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  box-shadow:0px 10px 10px rgba(0,0,0,0.3);
+  padding:10px 30px;
+  border-bottom:3px solid #c9302c;
+  border-right:1px solid #c9302c;
+}
+#project-description ul,
+#project-description > p:nth-of-type(3),
+#project-description > p:nth-of-type(5) {
+  text-align:left;
+}
+
 
 #quote-box {
   margin-top: 100px;
-  background-color: #eee;
+  background-color: white;
   border-radius: 5px;
   padding: 35px;
 }

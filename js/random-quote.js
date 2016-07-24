@@ -7,11 +7,6 @@ setTimeout(changeColor,300);
 setTimeout(changeText,800);
 setTimeout(showQuote,1000);
 
-
-
-
-
-
 });
 
 function getRandomInt(min, max) {
@@ -27,7 +22,12 @@ $('#big-quote').animate({color:randomColor},1000);
 $('#quote-text').animate({color:randomColor},1000);
 $('#quotee').animate({color:randomColor},1000);
 $('#social-buttons a').animate({backgroundColor:randomColor},1000);
+$('#project-description').animate({color:randomColor},100);
+$('#project-description').animate({borderRightColor:randomColor},100);
+$('#project-description').animate({borderBottomColor:randomColor},100);
+$('#info-button').animate({color:randomColor},100);
 $('#new-quote a').animate({backgroundColor:randomColor},1000);
+
 }
 var hideQuote = function() {
 $("#quote").animate({opacity:0}, 500);
@@ -75,5 +75,20 @@ $("#quote-text").text(randomQuote.quote);
 $("#tweet-button").attr("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + "\"" + randomQuote.quote.replace(/\s/g,"%20") + "\" " + randomQuote.author.replace(/\s/g, "%20"));
 $("#tumblr-button").attr("href", "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + randomQuote.author.replace(/\s/g, "%20") + "&content=" + randomQuote.quote.replace(/\s/g, "%20"));
 };
+
+
+$('#info-button').on('click',function(){
+  if($('#project-description').css('top') == "-365px"){
+    $('#project-description').css('top','0');
+//    var currentColor = $('#info-button').css('color');
+    $('#info-button').css({/*'background':currentColor,'color':'white',*/'transform':'rotate(90deg)'});
+  }
+  else {
+    $('#project-description').css('top','-365px');
+//    var currentColor = $('#info-button').css('background');
+    $('#info-button').css({/*'background':'white','color':currentColor,*/'transform':'rotate(0deg)'});
+    $('#info-button:hover').css('background','#7f52d2;')
+  }
+});
 
 });
