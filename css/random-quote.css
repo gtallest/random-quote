@@ -1,0 +1,84 @@
+body {
+  background-color: #ff3030;
+  font-family: monospace;
+}
+
+#quote-box {
+  margin-top: 100px;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 35px;
+}
+
+#social-buttons {
+  display: inline-block;
+}
+
+#social-buttons a {
+  width: 42px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#new-quote a {
+  height: 40px;
+  position: relative;
+}
+
+#new-quote a span {
+  position: relative;
+  top: 3px;
+}
+
+#new-quote {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+#social-buttons a,
+#new-quote a {
+  background-color: #ff3030;
+  color: white;
+}
+
+#social-buttons a:hover,
+#new-quote a:hover {
+  opacity: 0.85;
+}
+
+#author {
+  color: white;
+  margin-top: 5px;
+}
+
+#big-quote {
+  display: inline-block;
+  font-size: 30px;
+  color: #ff3030;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin-right: 10px;
+}
+
+#quote {
+  display: inline-block;
+  color: #ff3030;
+  width: 100%;
+  text-align: center;
+  padding: 0px !important;
+}
+
+#quote-text {
+  font-size: 24px;
+}
+
+#quotee {
+  color: #ff3030;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
