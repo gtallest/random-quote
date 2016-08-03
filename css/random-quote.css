@@ -137,3 +137,39 @@ a:hover {
   text-decoration: none;
   color: white;
 }
+
+/*Responsive*/
+@media only screen and (max-width:1100px) {
+  #project-description {
+    top:-450px;
+    width:70%;
+  }
+}
+@media only screen and (max-width:991px) {
+    #quote-box {
+      border-radius:0 !important;
+    }
+}
+@media only screen and (max-width:717px) {
+  #project-description {
+    top:-500px;
+  }
+}
+@media only screen and (max-width:623px) {
+  #project-description {
+    top:-500px;
+    width:80%;
+  }
+}
+@media only screen and (max-width:439px) {
+  #project-description {
+    top:-600px;
+    width:80%;
+  }
+}
+@media only screen and (max-width:340px) {
+  #project-description {
+    top:-650px;
+    width:80%;
+  }
+}
